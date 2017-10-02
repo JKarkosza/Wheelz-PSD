@@ -1,0 +1,33 @@
+{
+  "name": "wheelz-psd",
+  "version": "1.0.0",
+  "description": "PSD2HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKarkosza/Wheelz-PSD.git"
+  },
+  "keywords": [
+    "psd2html"
+  ],
+  "author": "JKarkosza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JKarkosza/Wheelz-PSD/issues"
+  },
+  "homepage": "https://github.com/JKarkosza/Wheelz-PSD#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "require-dir": "^0.3.2"
+  },
+  "dependencies": {
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss": "^1.4.0"
+  }
+}
