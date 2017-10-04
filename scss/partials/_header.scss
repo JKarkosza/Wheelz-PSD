@@ -1,0 +1,28 @@
+header {
+  height: 80vh;
+  background-image: url(../images/main-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .col-6:first-of-type{
+    margin: 8vh 0;
+    h1{
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 900;
+      letter-spacing: 3px;
+      padding: 5px 0 0 6rem;
+    }
+  }
+  .col-6:last-of-type{
+    margin: 8vh 0;
+    p{
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: white;
+      float: right;
+      padding: 0 7rem 0 0;
+    }
+  }
+}
