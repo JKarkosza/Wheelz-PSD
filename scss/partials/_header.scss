@@ -1,6 +1,11 @@
 header {
   height: 80vh;
-  background-image: url(../images/main-bg.jpg);
+  background:
+    radial-gradient(
+      rgba(255, 255, 255, 0.01),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url(../images/main-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,6 +28,37 @@ header {
       color: white;
       float: right;
       padding: 0 7rem 0 0;
+    }
+  }
+  .col-12{
+    margin-top: 15vh;
+    main{
+      float: right;
+      text-align: right;
+    }
+    h2{
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 900;
+      letter-spacing: 5px;
+      word-spacing: 3px;
+      padding: 1.5rem 6rem 0  0;
+      text-transform: uppercase;
+    }
+    h3{
+      font-weight: 500;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      padding: 1rem 6rem 0.5rem 0;
+      color: $textSecondary;
+    }
+    p{
+      font-weight: 500;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      padding-right: 6rem;
+      font-style: italic;
+      color: $textSecondary;
     }
   }
 }
