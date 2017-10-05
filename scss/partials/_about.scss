@@ -1,6 +1,33 @@
 .about{
-  // border: 1px solid red;
   height: 35vh;
+  margin: 0 auto;
   h2{
+    margin: 2.5rem 0 0.5rem 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.15rem;
+  }
+  h3{
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.15rem;
+  }
+  img{
+    display: block;
+    margin: 1rem auto;
+  }
+  p{
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    // text-align: center;
+    font-weight: 600;
+    padding: 0 1rem;
+    color: rgba(0, 0, 0, 0.9);
   }
 }
