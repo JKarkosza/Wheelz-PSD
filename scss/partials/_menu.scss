@@ -1,6 +1,24 @@
 .menu{
-  height: 20vh;
-  .col-4{
-    border: 1px solid red;
+  height: 10vh;
+  h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 2rem 0 0 0;
+    letter-spacing: 3px;
+  }
+  .col-8{
+    margin-top: 3rem;
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+      li{
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
   }
 }
