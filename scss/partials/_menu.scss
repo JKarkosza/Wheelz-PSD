@@ -1,22 +1,32 @@
+.menuSect{
+  box-shadow: 0 8px 25px -8px #c6c9ce;
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .menu{
   height: 10vh;
+  display: grid;
   h2{
     text-transform: uppercase;
     font-size: 2rem;
-    padding: 2rem 0 0 0;
     letter-spacing: 3px;
   }
   .col-8{
-    margin-top: 3rem;
     ul{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+      align-content: center;
       list-style: none;
       li{
         text-transform: uppercase;
-        font-size: 1.2rem;
-        font-weight: 500;
+        font-size: 1.1rem;
+        font-weight: 600;
         color: rgba(0, 0, 0, 0.7);
       }
     }
