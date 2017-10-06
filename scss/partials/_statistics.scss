@@ -1,0 +1,33 @@
+#stats{
+  height: 45vh;
+  background: url(../images/mid-bg.jpg);
+  .col-12{
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5rem;
+    h2{
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-weight: 800;
+    }
+    h3{
+      padding-top: 0.5rem;
+      letter-spacing: 0.15rem;
+      opacity: 0.9;
+    }
+  }
+  .col-4 {
+    color: white;
+    padding-top: 4rem;
+    h2{
+      font-size: 4.5rem;
+      font-weight: 600;
+      border: 1px solid red;
+    }
+    h3{
+      text-transform: uppercase;
+    }
+  }
+}
