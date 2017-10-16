@@ -1,7 +1,7 @@
 .about{
-  height: 30vh;
-  margin: 0 auto;
-  h2{
+  min-height: 25vh;
+  margin: 1vh auto;
+  &__header{
     margin: 2.5rem 0 0.5rem 0;
     width: 100%;
     text-align: center;
@@ -10,18 +10,18 @@
     font-weight: 900;
     letter-spacing: 0.15rem;
   }
-  h3{
+  &__subhead{
     width: 100%;
     text-align: center;
     color: rgba(0, 0, 0, 0.8);
     letter-spacing: 0.15rem;
   }
-  img{
+  &__image{
     display: block;
     margin: 1rem auto;
   }
-  p{
-    margin: 0 auto;
+  &__text{
+    margin: 0 auto 2vh auto;
     width: 90%;
     font-size: 1rem;
     letter-spacing: 2px;
