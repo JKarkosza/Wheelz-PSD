@@ -81,9 +81,9 @@ header {
   position: relative;
   img {
     position: fixed;
+    width: 40px;
     left: 50%;
-    right: 50%;
-    margin: auto;
-    bottom: 85px;
+    margin-left: -20px;
+    bottom: 50px;
   }
 }

@@ -1,0 +1,59 @@
+.statistics {
+  background: url(../images/mid-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.stats {
+  height: 487px;
+}
+
+.stats__text {
+  h2 {
+    font-size: 30px;
+    padding-top: 90px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 5px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    padding-top: 10px;
+    margin-bottom: 85px;
+  }
+}
+
+.stats__numbers {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  h2 {
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+}
+
+.stats__numbers--left {
+  width: 33%;
+}
+
+.stats__numbers--mid {
+  width: 34%;
+}
+
+.stats__numbers--right {
+  width: 33%;
+}
