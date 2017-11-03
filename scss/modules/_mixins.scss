@@ -1,0 +1,12 @@
+@mixin sectionHeader {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@mixin sectionSubtitle {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
