@@ -1,0 +1,36 @@
+.teamShow {
+  background: #ededed;
+  min-height: 50vh;
+  text-align: center;
+}
+
+.team__header {
+  padding-top: 50px;
+  h2 {
+    @include sectionHeader;
+  }
+  p {
+    @include sectionSubtitle;
+    padding-top: 20px;
+  }
+}
+
+.team__people {
+  display: flex;
+  margin: 50px 150px 0 150px;
+  div {
+    width: 33%;
+    img {
+      border-radius: 50%;
+    }
+    h3 {
+      @include sectionHeader;
+      padding: 20px 0;
+    }
+    p {
+      @include sectionSubtitle;
+      text-transform: uppercase;
+
+    }
+  }
+}
