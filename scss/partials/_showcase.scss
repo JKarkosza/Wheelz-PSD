@@ -1,0 +1,39 @@
+.showCase {
+  margin-top: 70px;
+}
+
+.showCase__header {
+  text-align: center;
+  h2 {
+      @include sectionHeader;
+      padding-bottom: 25px;
+  }
+  p {
+    @include sectionSubtitle;
+    padding-bottom: 55px;
+  }
+}
+
+.showCase__photos {
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    min-width: 25%;
+  }
+}
+
+.showCase__footer {
+  margin-top: 65px;
+  padding-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  h2 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    span {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      font-weight: 600;
+    }
+  }
+}
