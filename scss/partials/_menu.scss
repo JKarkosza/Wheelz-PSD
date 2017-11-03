@@ -1,0 +1,30 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  height: 80px;
+  h2 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    line-height: 30px;
+  }
+}
+
+.menu__items{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  li{
+    float: right;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+}

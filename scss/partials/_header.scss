@@ -1,6 +1,7 @@
 header {
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
   background: url(../images/main-bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,16 +18,21 @@ header {
   text-transform: uppercase;
   font: "Lato", sans-serif;
   h1 {
-    font-size: 26px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 5px;
   }
   .header__top__menu{
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
+    h2 {
+      font-size: 24px;
+      letter-spacing: 3px;
+    }
     i {
-      font-size: 25px;
+      font-size: 24px;
       line-height: 25px;
       text-align: center;
       padding: 3px 0 0 8px;
@@ -63,7 +69,7 @@ header {
   }
 }
 
-.header__mid:after {
+.header__mid::after {
   clear: both;
 }
 
@@ -72,10 +78,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: relative;
+  // position: relative;
   img {
-    position: absolute;
+    position: fixed;
     left: 50%;
-    bottom: -200px;
+    right: 50%;
+    margin: auto;
+    bottom: 85px;
   }
 }
