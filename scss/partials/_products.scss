@@ -37,3 +37,18 @@
       }
     }
 }
+
+@media (max-width: 1300px) {
+  .products__element {
+    div {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .products__element {
+    div {
+      width: 100%;
+    }
+  }
+}

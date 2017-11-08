@@ -29,12 +29,13 @@ footer {
 .footer__main__midLeft {
   text-transform: uppercase;
   font-size: 18px;
-  ul {
-    list-style: none;
+  h3 {
     font-size: 18px;
     font-weight: 800;
-    margin-bottom: 30px;
     color: white;
+  }
+  ul {
+    list-style: none;
     li:first-of-type {
       padding-top: 30px;
     }

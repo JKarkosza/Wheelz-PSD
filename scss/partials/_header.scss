@@ -2,6 +2,7 @@ header {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
+  min-width: 100%;
   background: url(../images/main-bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -40,11 +41,28 @@ header {
   }
 }
 
+@media (max-width: 450px) {
+  .header__top {
+    padding: 30px 30px 0 30px;
+    h1 {
+      font-size: 18px;
+    }
+    .header__top__menu {
+      h2 {
+        font-size: 18px;
+      }
+      i {
+        display: none;
+      }
+    }
+  }
+}
+
 .header__mid {
   color: rgba(255, 255, 255, 0.9);
-  margin-top: 300px;
+  margin-top: 30vh;
   float: right;
-  padding: 50px 0;
+  padding: 50px 2vw;
   text-align: right;
   display: flex;
   flex-direction: column;
@@ -73,6 +91,17 @@ header {
   clear: both;
 }
 
+@media (max-width: 700px) {
+  .header__mid {
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
 .header__bot {
   width: 100%;
   display: flex;
@@ -84,6 +113,6 @@ header {
     width: 40px;
     left: 50%;
     margin-left: -20px;
-    bottom: 50px;
+    bottom: 5px;
   }
 }
