@@ -51,3 +51,50 @@
 .stats__numbers--right {
   width: 33%;
 }
+
+@media (max-width: 850px) {
+  .stats {
+    height: 350px;
+  }
+  .stats__text {
+    h2 {
+      font-size: 20px;
+      letter-spacing: 2px;
+      padding-top: 50px;
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 45px;
+    }
+  }
+  .stats__numbers {
+    h2 {
+      font-size: 40px;
+      letter-spacing: 3px;
+    }
+    h3 {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .stats__numbers {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .stats__numbers {
+    h2 {
+      font-size: 30px;
+      letter-spacing: 3px;
+    }
+    h3 {
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+  }
+}
