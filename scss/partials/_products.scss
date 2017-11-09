@@ -20,6 +20,9 @@
     div {
       width: 33%;
       margin-bottom: 20px;
+      img {
+        max-width: 100%;
+      }
       p {
         text-transform: uppercase;
         font-size: 20px;
@@ -38,7 +41,7 @@
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
   .products__element {
     div {
       width: 50%;
@@ -49,6 +52,16 @@
   .products__element {
     div {
       width: 100%;
+      margin-bottom: 30px;
+      p {
+        font-size: 16px;
+        }
+      p:nth-of-type(2){
+        margin-bottom: 5px;
+      }
+      a {
+        font-size: 14px;
+      }
     }
   }
 }
