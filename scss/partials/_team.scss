@@ -17,6 +17,7 @@
 
 .team__people {
   display: flex;
+  flex-wrap: wrap;
   margin: 50px 150px 0 150px;
   div {
     width: 33%;
@@ -31,6 +32,34 @@
       @include sectionSubtitle;
       text-transform: uppercase;
 
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .team__people {
+    margin: 20px auto 0 auto;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 650px) {
+  .team__people {
+    margin: 20px auto 0 auto;
+    justify-content: space-around;
+    div {
+      width: 100%;
+      margin: 20px auto;
+      img {
+        width: 50%;
+      }
+      h3 {
+        font-size: 20px;
+        padding: 10px 0;
+      }
+      p {
+        font-size: 14px;
+      }
     }
   }
 }
