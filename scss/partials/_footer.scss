@@ -20,6 +20,7 @@ footer {
 .footer__main {
   margin: 70px 100px;
   display: flex;
+  justify-content: space-between;
   div {
     min-width: 20%;
   }
@@ -51,16 +52,6 @@ footer {
   }
 }
 
-.footer__main__midLeft {
-  border: 1px solid red;
-  margin-right: 90px;
-}
-
-.footer__main__midRight {
-  border: 1px solid yellow;
-  margin-left: 90px;
-}
-
 .footer__main__midRight {
   h2 {
     font-size: 18px;
@@ -69,5 +60,14 @@ footer {
     color: white;
     text-transform: uppercase;
   }
+}
 
+.footer__main__right {
+  -webkit-filter: grayscale(.3);
+  filter: grayscale(.3);
+}
+
+#map {
+  height: 200px;
+  width: 100%;
 }
