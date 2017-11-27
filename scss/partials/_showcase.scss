@@ -17,6 +17,7 @@
 .showCase__photos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   img {
     min-width: 25%;
   }
