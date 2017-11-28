@@ -5,42 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./src/main.css">
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <title>Wheelz</title>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header__top">
-        <h1>Wheels</h1>
-        <div class="header__top__menu">
-          <h2>menu</h2>
-          <i class="ion-navicon-round"></i>
-        </div>
+  <header id="header">
+    <div class="header__top">
+      <h1>Wheels</h1>
+      <div class="header__top__menu">
+        <ul>
+          <li>menu
+            <ul class="drop__menu">
+              <li>about</li>
+              <li>products</li>
+              <li>team</li>
+              <li>contact</li>
+            </ul>
+          </li>
+        </ul>
+        <h2>menu</h2>
       </div>
-      <div class="header__mid">
-        <h2>Welcome to wheels</h2>
-        <p>Your free psd template,<br /> perfect for your next big idea <br /><span>by Pawel Betkowski</span></p>
+    </div>
+    <div class="header__mid">
+      <h2>Welcome to wheels</h2>
+      <p>Your free psd template,<br /> perfect for your next big idea <br /><span>by Pawel Betkowski</span></p>
     </div>
     <div class="header__bot">
       <img src="./images/mouse.png" alt="scroll mouse">
     </div>
-  </div>
   </header>
   <section class="menu__shadow">
-    <div class="menu container">
-      <h2>wheels</h2>
+    <nav class="menu">
+      <h2><a href="#header">wheels</a></h2>
       <ul class="menu__items">
-        <li><a href="#aboutSection">about us</a></li>
-        <li><a href="">products</a></li>
-        <li><a href="">services</a></li>
-        <li><a href="">our team</a></li>
-        <li><a href="">blog</a></li>
-        <li><a href="">contact</a></li>
+        <li><a href="#about">about us</a></li>
+        <li><a href="#products">products</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#teamShow">our team</a></li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#footer">contact</a></li>
       </ul>
-    </div>
+    </nav>
   </section>
-  <section class="about container" id="aboutSection">
+  <section id="about">
     <h3 class="about__title">about us</h3>
     <p class="about__subtitle">Let’s talk about what makes your company great.</p>
     <img src="./images/icons/bike.jpg" alt="bike_logo">
@@ -48,7 +54,7 @@
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt reiciendis eius, quae ratione, consequatur, repellat fugit a ullam, ad optio culpa cumque tenetur quo corporis maiores dicta molestias quasi ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ea nemo deserunt, beatae qui neque dolorum cumque, ipsam voluptas amet, perspiciatis vel, veniam nesciunt. Illum veritatis voluptatum ad doloremque consequuntur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt reiciendis eius, quae ratione, consequatur, repellat fugit a ullam, ad optio culpa cumque tenetur quo corporis maiores dicta molestias quasi ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ea nemo deserunt, beatae qui neque dolorum cumque, ipsam voluptas amet, perspiciatis vel, veniam nesciunt. Illum veritatis voluptatum ad doloremque consequuntur.
     </p>
   </section>
-  <section class="statistics">
+  <section id="statistics">
     <div class="stats">
       <div class="stats__text">
         <h2>some statistics</h2>
@@ -70,7 +76,7 @@
       </div>
     </div>
   </section>
-  <main class="products container">
+  <main id="products">
     <div class="products__header">
       <h2>featured products</h2>
       <p>Your chance to shine</p>
@@ -114,34 +120,32 @@
       </div>
     </div>
   </main>
-  <section class="teamShow">
-    <div class="container">
-      <div class="team">
-        <div class="team__header">
-          <h2>meet the team</h2>
-          <p>People who make the magic happen</p>
+  <section id="teamShow">
+    <div class="team">
+      <div class="team__header">
+        <h2>meet the team</h2>
+        <p>People who make the magic happen</p>
+      </div>
+      <div class="team__people">
+        <div>
+          <img src="./images/people/ian.jpg" alt="Ian">
+          <h3>ian</h3>
+          <p>founder, ceo</p>
         </div>
-        <div class="team__people">
-          <div>
-            <img src="./images/people/ian.jpg" alt="Ian">
-            <h3>ian</h3>
-            <p>founder, ceo</p>
-          </div>
-          <div>
-            <img src="./images/people/sarah.jpg" alt="Sarah">
-            <h3>sarah</h3>
-            <p>designer</p>
-          </div>
-          <div>
-            <img src="./images/people/juan.jpg" alt="Juan">
-            <h3>juan</h3>
-            <p>office wizard</p>
-          </div>
+        <div>
+          <img src="./images/people/sarah.jpg" alt="Sarah">
+          <h3>sarah</h3>
+          <p>designer</p>
+        </div>
+        <div>
+          <img src="./images/people/juan.jpg" alt="Juan">
+          <h3>juan</h3>
+          <p>office wizard</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="showCase container">
+  <section class="showCase">
     <div class="showCase__header">
       <h2>#social showcase</h2>
       <p>Show your customers why your instagram account is the one they should follow</p>
@@ -156,7 +160,7 @@
       <h2>follow <span>@wheelz</span> on instgram</h2>
     </div>
   </section>
-  <footer>
+  <footer id="footer">
     <div class="footer container">
       <div class="footer__header">
         <h2>wheelz</h2>
@@ -166,23 +170,23 @@
         <div class="footer__main__left">
           <h3>quick links</h3>
           <ul>
-            <li><a href="">about us</a></li>
-            <li><a href="">products</a></li>
-            <li><a href="">services</a></li>
-            <li><a href="">our team</a></li>
-            <li><a href="">blog</a></li>
-            <li><a href="">contact</a></li>
+            <li><a href="#about">about us</a></li>
+            <li><a href="#products">products</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#teamShow">our team</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#footer">contact</a></li>
           </ul>
         </div>
         <div class="footer__main__midLeft">
           <h3>quick links 2</h3>
           <ul>
-            <li><a href="">faq</a></li>
-            <li><a href="">terms & conditions</a></li>
-            <li><a href="">something else</a></li>
-            <li><a href="">anything</a></li>
-            <li><a href="">your ideas</a></li>
-            <li><a href="">right here</a></li>
+            <li><a href="#">faq</a></li>
+            <li><a href="#">terms & conditions</a></li>
+            <li><a href="#">something else</a></li>
+            <li><a href="#">anything</a></li>
+            <li><a href="#">your ideas</a></li>
+            <li><a href="#">right here</a></li>
           </ul>
         </div>
         <div class="footer__main__midRight">

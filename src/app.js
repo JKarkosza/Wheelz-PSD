@@ -4,7 +4,8 @@ function initMap() {
     zoom: 10,
     center: cracow,
     fullscreenControl: false,
-    streetViewControl: false
+    streetViewControl: false,
+    mapTypeControl: false
   });
   var marker = new google.maps.Marker({
     position: cracow,

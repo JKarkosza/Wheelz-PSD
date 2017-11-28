@@ -24,19 +24,9 @@ header {
     letter-spacing: 5px;
   }
   .header__top__menu{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    h2 {
+    >li {
       font-size: 24px;
       letter-spacing: 3px;
-    }
-    i {
-      font-size: 24px;
-      line-height: 25px;
-      text-align: center;
-      padding: 3px 0 0 8px;
     }
   }
 }
@@ -48,11 +38,8 @@ header {
       font-size: 18px;
     }
     .header__top__menu {
-      h2 {
+      >li {
         font-size: 18px;
-      }
-      i {
-        display: none;
       }
     }
   }
@@ -61,7 +48,6 @@ header {
 .header__mid {
   color: rgba(255, 255, 255, 0.9);
   margin-top: 30vh;
-  float: right;
   padding: 50px 2vw;
   text-align: right;
   display: flex;
@@ -87,10 +73,6 @@ header {
   }
 }
 
-.header__mid::after {
-  clear: both;
-}
-
 @media (max-width: 700px) {
   .header__mid {
     h2 {
@@ -109,10 +91,11 @@ header {
   justify-content: flex-end;
   position: relative;
   img {
-    position: fixed;
+    opacity: 0.4;
+    position: absolute;
     width: 40px;
     left: 50%;
     margin-left: -20px;
-    bottom: 5px;
+    bottom: -200px;
   }
 }

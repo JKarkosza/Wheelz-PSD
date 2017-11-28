@@ -1,4 +1,4 @@
-footer {
+#footer {
   min-height: 650px;
   background: rgba(0, 0, 0 ,0.9);
 }
@@ -18,7 +18,7 @@ footer {
 }
 
 .footer__main {
-  margin: 70px 280px;
+  margin: 70px 280px 0 280px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -29,13 +29,13 @@ footer {
 
 @media (max-width: 1200px) {
   .footer__main {
-    margin: 50px 100px;
+    margin: 50px 100px 0 100px;
   }
 }
 
 @media (min-width: 801px) and (max-width: 1199px) {
   .footer__main {
-    margin: 40px 80px;
+    margin: 40px 80px 0 80px;
     div {
       margin-bottom: 50px;
       min-width: 40%;
