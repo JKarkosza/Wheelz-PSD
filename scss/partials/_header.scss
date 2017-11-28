@@ -23,11 +23,69 @@ header {
     font-weight: 800;
     letter-spacing: 5px;
   }
-  .header__top__menu{
-    >li {
-      font-size: 24px;
-      letter-spacing: 3px;
-    }
+}
+
+.drop__menu {
+ > li {
+   position: relative;
+   text-align: right;
+   list-style: none;
+   font-size: 24px;
+   letter-spacing: 3px;
+   cursor: pointer;
+   a {
+     text-decoration: none;
+     color: white;
+   }
+
+   &hover > .drop__menu__list {
+     perspective: 1000px;
+   }
+
+   &:hover > .drop__menu__list li{
+     display: block;
+     opacity: 0;
+
+     @for $i from 1 through 4 {
+       &:nth-child(#{$i}) {
+         animation-name: menuDrop;
+         animation-duration: 300ms * $i;
+         animation-timing-function: ease-in-out;
+         animation-fill-mode: forwards;
+       }
+     }
+
+   }
+ .drop__menu__list {
+   position: absolute;
+   top: 100%;
+   right: 0%;
+   padding: 0;
+   li {
+     text-align: right;
+     width: 100%;
+     display: none;
+     list-style: none;
+     font-size: 20px;
+     color: white;
+     a {
+       &:hover {
+         color: rgba(255, 255, 255, 0.5);
+         }
+       }
+     }
+   }
+  }
+}
+
+@keyframes menuDrop {
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px);
   }
 }
 
@@ -38,10 +96,17 @@ header {
       font-size: 18px;
     }
     .header__top__menu {
-      >li {
+     > li {
         font-size: 18px;
       }
     }
+  }
+  .drop__menu__list {
+    position: absolute;
+    right: 0%;
+  }
+  .drop__menu__list li a {
+    font-size: 12px;
   }
 }
 
